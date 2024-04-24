@@ -2,3 +2,4 @@ requests==2.26.0
 streamlit==1.5.1
 transformers==4.12.3
 tokenizers==0.10.3
+--upgrade pip

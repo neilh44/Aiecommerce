@@ -1,0 +1,22 @@
+name: Upgrade pip
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  upgrade-pip:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Upgrade pip
+        run: |
+          python -m pip install --upgrade pip
+          

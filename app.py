@@ -144,4 +144,3 @@ if user_query:
                 st.write("No products found.")
         else:
             st.write("Failed to fetch product data from Shopify. Status code:", response.status_code)
-          
